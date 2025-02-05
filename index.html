@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+  <!--Successfull message -->
+  <div id="alert" class="alert">
+      <div class="alert-msg">
+        <img src="./assets/images/icon-success-check.svg" alt="Check Icon" class="check-icon">
+        <h2>Message Sent!</h2>
+      </div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+
+  <!--End-->
+
+    <div class="contact-form">
+        <h1>Contact Us</h1>
+        <form action="#" id="myForm">
+          <div class="form-group two-columns">
+              <div> 
+                    <label for="first'name">First Name <span class="required">*</span></label>
+                    <input type="text" name="first'name" id="first-name" required>
+                    <span class="error-message" id="first-name-error">This field is required</span>
+              </div>
+              <div> 
+                  <label for="last-name">Last Name <span class="required">*</span></label>
+                  <input type="text" name="last-name" id="last-name" required>
+                  <span class="error-message" id="last-name-error">This field is required</span>
+              </div>
+          </div>
+
+          <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" name="email" id="email" required>
+              <span class="error-message" id="email-error">Please enter a valid email address</span>
+          </div>
+
+          <div class="form-group">
+              <label for="query-type" class="query-label">Query Type <span class="required">*</span></label>
+              <div class="radio-two-columns">
+                  <div class="radio-item">
+                    <input type="radio" name="query-type" id="option1">
+                    <label for="general-enquiry" class="option-label">General Enquiry</label>
+                  </div>
+                  <div class="radio-item">
+                      <input type="radio" name="query-type" id="option2">
+                      <label for="support-request" class="option-label">Support Request</label>
+                  </div>
+              </div>
+                  <span class="error-message" id="radio-error">Please select a query type</span>
+          </div>
+          <div class="form-group textarea-div">
+              <label for="comments">Message <span class="required">*</span></label>
+              <textarea name="comments" id="comments" required></textarea>
+              <span class="error-message" id="comments-error">This field is required</span>
+          </div>
+          <div class="form-group checkbox-group">
+              <input type="checkbox" name="checkbox" id="checkbox" required>
+              <label for="consent"> I consent to being contacted by the team <span class="required">*</span></label>
+              <span class="error-message" id="consent-error">To submit this form, please consent to being contacted</span>
+          </div>
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+    </div>
+
+</main>
+  <!-- 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+
+  <script src="app.js"></script>
+</body>
+</html>
